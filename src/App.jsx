@@ -1,10 +1,37 @@
 import React from "react";
+import "./styles.css";
 
 export const App = () => {
   return (
     <>
-      <h1>Hello</h1>
-      <p>change commit</p>
+      <div>
+        <input placeholder="TODOを入力" />
+        <button>追加</button>
+      </div>
+      <div>
+        <p>未完了のTODO</p>
+        <ul>
+          <div>
+            <li>aaa</li>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
+          <div>
+            <li>iii</li>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
+        </ul>
+      </div>
+      <div>
+        <p>完了のTODO</p>
+        <ul>
+          <div>
+            <li>uuu</li>
+            <button>戻す</button>
+          </div>
+        </ul>
+      </div>
     </>
   );
 };
