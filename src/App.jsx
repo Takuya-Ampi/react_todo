@@ -16,6 +16,9 @@ export const App = () => {
   };
   const onClickAdd = () => {
     if (todoText === "") return;
+    if (incompleteTodos && incompleteTodos.length > 4)
+      return alert("TODOを消化してね");
+
     const newTodos = [...incompleteTodos, todoText];
     setIncompleteTodos(newTodos);
     setTodoText("");
